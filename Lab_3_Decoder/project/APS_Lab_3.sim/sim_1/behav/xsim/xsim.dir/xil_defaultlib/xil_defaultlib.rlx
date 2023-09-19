@@ -1,0 +1,14 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/project/APS_Lab_3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv,1666714112,systemVerilog,,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv,,Data_memory,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv,1666615102,systemVerilog,,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv,,Instruction_memory,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv,1666645530,systemVerilog,,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISCV_ALU.sv,,Main_decoder,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISCV_ALU.sv,1674833300,systemVerilog,,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Register_file.sv,,RISCV_ALU,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISC_V_pac.sv,1666458372,systemVerilog,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv;D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv;D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISCV_ALU.sv,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv,,RISC_V_pac,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISC_V_processor.sv,1695125909,systemVerilog,,,,RISC_V_processor,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Register_file.sv,1665405646,systemVerilog,,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISC_V_processor.sv,,Register_file,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/tb/defines_riscv.v,1666635494,verilog,,,,,,,,,,,,
+D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/tb/tb_decoder_riscv_obf.v,1666615190,verilog,,,D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/tb/defines_riscv.v,tb_decoder_riscv_obf,,,,,,,,

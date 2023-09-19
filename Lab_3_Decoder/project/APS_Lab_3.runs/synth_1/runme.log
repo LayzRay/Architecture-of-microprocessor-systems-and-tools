@@ -1,0 +1,507 @@
+
+*** Running vivado
+    with args -log RISC_V_processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISC_V_processor.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source RISC_V_processor.tcl -notrace
+Command: synth_design -top RISC_V_processor -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8264 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 445.863 ; gain = 152.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC_V_processor' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISC_V_processor.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Main_decoder' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv:1]
+INFO: [Synth 8-226] default block is never used [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv:86]
+WARNING: [Synth 8-87] always_comb on 'mem_size_o_reg' did not result in combinational logic [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv:41]
+WARNING: [Synth 8-87] always_comb on 'alu_op_o_reg' did not result in combinational logic [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv:51]
+INFO: [Synth 8-6155] done synthesizing module 'Main_decoder' (1#1) [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_memory' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:1]
+	Parameter DEPTH bound to: 256 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+WARNING: [Synth 8-3848] Net RAM in module/entity Instruction_memory does not have driver. [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:8]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_memory' (2#1) [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Instruction_memory.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Data_memory' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv:1]
+	Parameter DEPTH bound to: 256 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv:44]
+WARNING: [Synth 8-87] always_comb on 'RD_reg' did not result in combinational logic [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'Data_memory' (3#1) [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Register_file' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Register_file.sv:1]
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register_file' (4#1) [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Register_file.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_ALU' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISCV_ALU.sv:1]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_ALU' (5#1) [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISCV_ALU.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'RISC_V_processor' (6#1) [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/RISC_V_processor.sv:1]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[31]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[30]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[29]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[28]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[27]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[26]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[25]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[24]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[23]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[22]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[21]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[20]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[19]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[18]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[17]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[16]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[15]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[14]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[13]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[12]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[11]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[10]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[9]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port A[8]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[24]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[23]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[22]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[21]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[20]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[19]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[18]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[17]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[16]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[15]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[11]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[10]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[9]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[8]
+WARNING: [Synth 8-3331] design Main_decoder has unconnected port fetched_instr_i[7]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 509.859 ; gain = 216.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 509.859 ; gain = 216.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 509.859 ; gain = 216.695
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-5587] ROM size for "ex_op_a_sel_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ex_op_b_sel_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "mem_we_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gpr_we_a_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wb_src_sel_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "illegal_instr_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_o_reg' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv:51]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_size_o_reg' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Main_decoder.sv:41]
+WARNING: [Synth 8-327] inferring latch for variable 'RD_reg' [D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/rtl/Data_memory.sv:26]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 509.859 ; gain = 216.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  11 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	  11 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RISC_V_processor 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Main_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      5 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 2     
+	  12 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+Module Data_memory 
+Detailed RTL Component Info : 
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module Register_file 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module RISCV_ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "MD/ex_op_a_sel_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "MD/ex_op_b_sel_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MD/mem_we_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MD/gpr_we_a_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (MD/alu_op_o_reg[4]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (MD/alu_op_o_reg[3]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (MD/alu_op_o_reg[2]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (MD/alu_op_o_reg[1]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (MD/alu_op_o_reg[0]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (MD/mem_size_o_reg[2]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (MD/mem_size_o_reg[1]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (MD/mem_size_o_reg[0]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[31]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[30]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[29]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[28]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[27]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[26]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[25]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[24]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[23]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[22]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[21]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[20]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[19]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[18]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[17]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[16]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[15]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[14]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[13]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[12]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[11]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[10]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[9]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[8]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[7]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[6]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[5]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[4]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[3]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[2]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[1]) is unused and will be removed from module RISC_V_processor.
+WARNING: [Synth 8-3332] Sequential element (DM/RD_reg[0]) is unused and will be removed from module RISC_V_processor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 341 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 655.684 ; gain = 362.520
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 185 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 761.250 ; gain = 468.086
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.250 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/MIET/5 semester/APS/Labs/Lab_3_Decoder/project/APS_Lab_3.runs/synth_1/RISC_V_processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RISC_V_processor_utilization_synth.rpt -pb RISC_V_processor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 19 15:22:16 2023...

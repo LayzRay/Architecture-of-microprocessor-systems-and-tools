@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../rtl/RISC_V_pac.sv" \
+"../../../../../rtl/Main_decoder.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../tb/tb_decoder_riscv_obf.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
