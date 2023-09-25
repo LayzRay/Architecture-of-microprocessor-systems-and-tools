@@ -3,7 +3,7 @@ module Control_Status_Registers (
     input CLK,
     input arstn_i,
     
-    input [31:0] PC,
+    input [ 31 : 0 ] PC,
     input [2:0]  OP,
     
     input [11:0] A,
